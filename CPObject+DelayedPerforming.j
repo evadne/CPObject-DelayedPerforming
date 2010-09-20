@@ -5,7 +5,7 @@
 	
 	
 
-@import "Foundation/Foundation.j"
+@import <Foundation/Foundation.j>
 
 
 
