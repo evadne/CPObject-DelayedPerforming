@@ -15,7 +15,7 @@
 
 - (CPTimer) performSelector:(SEL)inSelector withObject:(id)anObject afterDelay:(CPTimeInterval)delayInSeconds {
 
-	return [CPTimer scheduledTimerWithTimeInterval:delayInSeconds target:self selector:inSelector userInfo:nil repeats:NO];
+	return [CPTimer scheduledTimerWithTimeInterval:delayInSeconds target:self selector:inSelector userInfo:anObject repeats:NO];
 	
 }
 
