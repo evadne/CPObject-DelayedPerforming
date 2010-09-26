@@ -15,7 +15,13 @@
 
 - (CPTimer) performSelector:(SEL)inSelector withObject:(id)anObject afterDelay:(CPTimeInterval)delayInSeconds {
 
-	return [CPTimer scheduledTimerWithTimeInterval:delayInSeconds target:self selector:inSelector userInfo:anObject repeats:NO];
+//	return [CPTimer scheduledTimerWithTimeInterval:delayInSeconds target:self selector:inSelector userInfo:anObject repeats:NO];
+	
+	setTimeout(/* () */ function  () {
+
+		[self performSelector:inSelector withObject:anObject];
+
+	}, delayInSeconds * 1000);
 	
 }
 
